@@ -277,7 +277,7 @@ You can use systemd to customize [InfluxDB configuration options](/influxdb/v2/r
    <!--pytest.mark.skip-->
 
    ```sh
-   ARG1="--http-bind-address :8087"
+   ARG1="--http-bind-address=:8087"
    ARG2="--storage-wal-fsync-delay=15m"
 
 2. Edit the `/lib/systemd/system/influxdb.service` file to pass the variables to the `ExecStart` value:
